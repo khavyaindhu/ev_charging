@@ -3,6 +3,7 @@ import 'screens/login_screen.dart';
 import 'screens/register_screen.dart';
 import 'screens/dashboard_page.dart';
 import 'screens/admin_dashboard.dart';
+import 'screens/vehicle_selection_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const LoginPage(),
         '/admin-dashboard': (context) => AdminDashboard(),
         '/register': (context) => const RegisterPage(),
+        '/vehicle-selection': (context) => const VehicleSelectionPage(), 
         '/dashboard_page': (context) => const DashboardPage(),
         '/dashboard': (context) => const DashboardPage(),
       },
