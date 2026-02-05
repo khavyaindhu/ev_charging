@@ -298,7 +298,7 @@ class DashboardPage extends StatelessWidget {
           iconBackground: Colors.pink[100]!,
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => DrinkingWaterPage()),
+            MaterialPageRoute(builder: (context) => const BeverageAndStorePage()),
           ),
         ),
       ],
@@ -489,9 +489,9 @@ class _ChargingPortDetailsPageState extends State<ChargingPortDetailsPage> {
                 style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 16),
-              Text(
+              const Text(
                 "Select EV Port",
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 8),
               DropdownButton<String>(
